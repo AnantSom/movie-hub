@@ -1,0 +1,22 @@
+# .dockerignore
+
+# Git and Docker specific files
+.git
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+
+# Dependencies
+node_modules
+
+# Build output
+dist
+build
+
+# Environment files (these should be passed in at runtime, not built into the image)
+.env
+.env.*
+
+# Logs
+npm-debug.log
