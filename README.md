@@ -51,7 +51,7 @@ This project requires an API key from The Movie Database (TMDb).
 
 1.  Clone the repository:
     ```sh
-    git clone https://github.com/your-username/your-repo-name.git
+    git clone https://github.com/AnantSom/movie_vault.git
     ```
 2.  Navigate to the project directory:
     ```sh
