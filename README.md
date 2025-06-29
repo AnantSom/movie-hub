@@ -1,4 +1,4 @@
-# Movie Vault 🎬
+# Movie Hub 🎬
 
 A responsive web application for discovering popular movies, managing a personal watchlist, and viewing detailed movie information, built with React and containerized with Docker.
 
@@ -35,7 +35,7 @@ This project requires an API key from The Movie Database (TMDB).
 
 1.  Clone the repository:
     ```sh
-    git clone https://github.com/AnantSom/movie_vault.git
+    git clone https://github.com/AnantSom/movie-hub.git
     ```
 2.  Navigate to the project directory:
     ```sh
