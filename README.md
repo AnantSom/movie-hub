@@ -3,10 +3,6 @@
 A responsive web application for discovering popular movies, managing a personal watchlist, and viewing detailed movie information, built with React and containerized with Docker.
 
 
-*(Suggestion: Replace the link above with a screenshot of your running application!)*
-
----
-
 ## ✨ Key Features
 
 -   **Browse Trending Movies**: Fetches and displays the latest popular movies from The Movie Database (TMDb) API.
@@ -25,24 +21,12 @@ A responsive web application for discovering popular movies, managing a personal
 -   **API Communication**: Axios
 -   **Deployment**: Docker, Nginx
 
-## 🚀 Getting Started
-
-To get a local copy up and running, follow these simple steps.
-
-### Prerequisites
-
-You need to have Node.js, npm, and Docker installed on your machine.
-
--   [Node.js](https://nodejs.org/)
--   [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 
 ### 🔑 Environment Variables
 
-This project requires an API key from The Movie Database (TMDb).
-
-1.  Get a free API key at [themoviedb.org](https://www.themoviedb.org/signup).
-2.  Create a file named `.env` in the root of the project.
-3.  Add your API key to the file like this:
+This project requires an API key from The Movie Database.
+1.  Create a file named `.env` in the root of the project.
+2.  Add your API key to the file like this:
     ```
     VITE_TMDB_API_KEY=your_actual_api_key_here
     ```
