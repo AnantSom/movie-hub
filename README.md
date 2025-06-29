@@ -1,12 +1,83 @@
-# React + Vite
+# Movie Vault 🎬
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive web application for discovering popular movies, managing a personal watchlist, and viewing detailed movie information, built with React and containerized with Docker.
 
-Currently, two official plugins are available:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+*(Suggestion: Replace the link above with a screenshot of your running application!)*
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Key Features
+
+-   **Browse Trending Movies**: Fetches and displays the latest popular movies from The Movie Database (TMDb) API.
+-   **Pagination**: Easily navigate through multiple pages of movie results.
+-   **Personal Watchlist**: Add movies to a personal watchlist or remove them.
+-   **Persistent Data**: The watchlist is saved to the browser's `localStorage`, so it persists between sessions.
+-   **Filter & Sort**: The watchlist can be filtered by genre and sorted by rating.
+-   **Detailed Views**: Click on any movie to see a dedicated details page with its overview, rating, cast, and embedded trailer.
+-   **Dockerized**: Comes with a complete Docker setup for easy production deployment using Nginx.
+
+## 🛠️ Tech Stack
+
+-   **Frontend**: React.js, Vite
+-   **Styling**: Tailwind CSS
+-   **Routing**: React Router
+-   **API Communication**: Axios
+-   **Deployment**: Docker, Nginx
+
+## 🚀 Getting Started
+
+To get a local copy up and running, follow these simple steps.
+
+### Prerequisites
+
+You need to have Node.js, npm, and Docker installed on your machine.
+
+-   [Node.js](https://nodejs.org/)
+-   [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+
+### 🔑 Environment Variables
+
+This project requires an API key from The Movie Database (TMDb).
+
+1.  Get a free API key at [themoviedb.org](https://www.themoviedb.org/signup).
+2.  Create a file named `.env` in the root of the project.
+3.  Add your API key to the file like this:
+    ```
+    VITE_TMDB_API_KEY=your_actual_api_key_here
+    ```
+
+### 💻 Running Locally (for Development)
+
+1.  Clone the repository:
+    ```sh
+    git clone https://github.com/your-username/your-repo-name.git
+    ```
+2.  Navigate to the project directory:
+    ```sh
+    cd movie-app
+    ```
+3.  Install NPM packages:
+    ```sh
+    npm install
+    ```
+4.  Start the development server:
+    ```sh
+    npm run dev
+    ```
+5.  Open [http://localhost:5173](http://localhost:5173) in your browser.
+
+### 🐳 Running with Docker (for Production)
+
+1.  Clone the repository and navigate into the directory.
+2.  Make sure you have created the `.env` file as described above.
+3.  Run the production-ready container:
+    ```sh
+    npm run docker:prod
+    ```
+4.  The terminal will notify you when it's ready. Open [http://localhost:3000](http://localhost:3000) in your browser.
+
+5.  To stop the container, run:
+    ```sh
+    npm run docker:stop
+    ```
