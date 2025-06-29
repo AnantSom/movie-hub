@@ -24,7 +24,7 @@ A responsive web application for discovering popular movies, managing a personal
 
 ### 🔑 Environment Variables
 
-This project requires an API key from The Movie Database.
+This project requires an API key from The Movie Database (TMDB).
 1.  Create a file named `.env` in the root of the project.
 2.  Add your API key to the file like this:
     ```
