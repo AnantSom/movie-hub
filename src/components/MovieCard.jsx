@@ -2,17 +2,6 @@ import React, { useContext } from "react";
 import { AppContext } from "../context/AppContext";
 import { useNavigate } from "react-router-dom";
 
-/**
- * MovieCard Component
- * 
- * Purpose: Displays individual movie cards with poster, title, and watchlist functionality
- * Features:
- * - Shows movie poster as background image
- * - Add/Remove from watchlist with heart/cross icons
- * - Click on card to navigate to movie details page
- * - Hover effects for better user interaction
- * - Prevents navigation when clicking watchlist buttons
- */
 function MovieCard({ movieObj, poster_path, name }) {
   const myContext = useContext(AppContext);
   const navigate = useNavigate();
